@@ -1,5 +1,62 @@
 [
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -40,22 +97,6 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -85,6 +126,46 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "importPath": "turizm.settings",
+        "description": "turizm.settings",
+        "isExtraImport": true,
+        "detail": "turizm.settings",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -121,14 +202,6 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "views",
         "importPath": "turist",
         "description": "turist",
@@ -154,12 +227,102 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Tur.migrations.0001_initial",
+        "description": "Tur.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='City',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100)),",
+        "detail": "Tur.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "TurConfig",
         "kind": 6,
         "importPath": "Tur.apps",
         "description": "Tur.apps",
         "peekOfCode": "class TurConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'Tur'",
         "detail": "Tur.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Country",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class Country(models.Model):\n    name = models.CharField(max_length=100)\n    population = models.PositiveIntegerField()\n    def __str__(self):\n        return self.name\nclass City(models.Model):\n    name = models.CharField(max_length=100)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE)\n    population = models.PositiveIntegerField()\n    def __str__(self):",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class City(models.Model):\n    name = models.CharField(max_length=100)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE)\n    population = models.PositiveIntegerField()\n    def __str__(self):\n        return self.name\nclass Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price_per_night = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "Hotel",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price_per_night = models.DecimalField(max_digits=10, decimal_places=2)\n    rating = models.FloatField()\n    def __str__(self):\n        return self.name\nclass TouristAgency(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "TouristAgency",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class TouristAgency(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    rating = models.FloatField()\n    def __str__(self):\n        return self.name\nclass TouristAttraction(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "TouristAttraction",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class TouristAttraction(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    rating = models.FloatField()\n    def __str__(self):\n        return self.name\nclass Transportation(models.Model):\n    name = models.CharField(max_length=100)\n    price = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "Transportation",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class Transportation(models.Model):\n    name = models.CharField(max_length=100)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    def __str__(self):\n        return self.name\nclass Tour(models.Model):\n    name = models.CharField(max_length=100)\n    tourist_agency = models.ForeignKey(TouristAgency, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    duration = models.DurationField()",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class Tour(models.Model):\n    name = models.CharField(max_length=100)\n    tourist_agency = models.ForeignKey(TouristAgency, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    duration = models.DurationField()\n    hotels = models.ManyToManyField(Hotel)\n    tourist_attractions = models.ManyToManyField(TouristAttraction)\n    transportation = models.ForeignKey(Transportation, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "Tur.models",
+        "description": "Tur.models",
+        "peekOfCode": "class Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)\n    author = models.CharField(max_length=100)\n    text = models.TextField()\n    def __str__(self):\n        return self.author + ' - ' + self.tour.name",
+        "detail": "Tur.models",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0001_initial",
+        "description": "turist.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='City',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=255)),",
+        "detail": "turist.migrations.0001_initial",
         "documentation": {}
     },
     {
@@ -172,11 +335,209 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class User(models.Model):\n    username = models.CharField(max_length=100)\n    userfname = models.CharField(max_length=100)\n    password = models.CharField(max_length=100)\n    login= models.CharField(max_length=100)\n    ID= models.CharField(max_length=100)\n    address= models.CharField(max_length=100)\nclass Employees(models.Model):\n    emp_name= models.CharField(max_length=100)\n    emp_fname= models.CharField(max_length=100)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Employees",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Employees(models.Model):\n    emp_name= models.CharField(max_length=100)\n    emp_fname= models.CharField(max_length=100)\n    login= models.CharField(max_length=100)\n    password= models.CharField(max_length=100)\n    job= models.CharField(max_length=100)\n    ID= models.CharField(max_length=100)\nclass Country(models.Model):\n    name = models.CharField(max_length=255)\n    code = models.CharField(max_length=3)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Country",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Country(models.Model):\n    name = models.CharField(max_length=255)\n    code = models.CharField(max_length=3)\nclass City(models.Model):\n    name = models.CharField(max_length=255)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')\nclass Way(models.Model):\n    TRANSPORT_CHOICES = [\n        ('car', _('Car')),\n        ('bus', _('Bus')),",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class City(models.Model):\n    name = models.CharField(max_length=255)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')\nclass Way(models.Model):\n    TRANSPORT_CHOICES = [\n        ('car', _('Car')),\n        ('bus', _('Bus')),\n        ('train', _('Train')),\n        ('plane', _('Plane')),\n        ('ship', _('Ship')),",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Way",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Way(models.Model):\n    TRANSPORT_CHOICES = [\n        ('car', _('Car')),\n        ('bus', _('Bus')),\n        ('train', _('Train')),\n        ('plane', _('Plane')),\n        ('ship', _('Ship')),\n    ]\n    transport = models.CharField(max_length=5, choices=TRANSPORT_CHOICES)\n    departure_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='departures')",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Hotel",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to='hotels')\n    address = models.CharField(max_length=200)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    room_type = models.CharField(max_length=50)\n    available_rooms = models.IntegerField()\n    price = models.FloatField()\nclass Place(models.Model):",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Place(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to='places')\n    address = models.CharField(max_length=200)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\nclass Tour(models.Model):\n    name = models.CharField(max_length=100)\n    destination = models.ForeignKey(City, on_delete=models.CASCADE)\n    start_date = models.DateField()",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Tour(models.Model):\n    name = models.CharField(max_length=100)\n    destination = models.ForeignKey(City, on_delete=models.CASCADE)\n    start_date = models.DateField()\n    end_date = models.DateField()\n    transportation = models.ForeignKey(Way, on_delete=models.CASCADE)\n    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)\n    places = models.ManyToManyField(Place, related_name='tours')\nclass Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)\n    author = models.CharField(max_length=100)\n    text = models.TextField() \n''' class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    address = models.CharField(max_length=200)\n    room_type = models.CharField(max_length=50)\n    available_rooms = models.IntegerField()\n    price = models.FloatField()",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Country",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Country(models.Model):\n    name = models.CharField(max_length=100)\n    population = models.PositiveIntegerField()\n    def __str__(self):\n        return self.name\nclass City(models.Model):\n    name = models.CharField(max_length=100)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE)\n    population = models.PositiveIntegerField()\n    def __str__(self):",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class City(models.Model):\n    name = models.CharField(max_length=100)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE)\n    population = models.PositiveIntegerField()\n    def __str__(self):\n        return self.name\nclass Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price_per_night = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Hotel",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price_per_night = models.DecimalField(max_digits=10, decimal_places=2)\n    rating = models.FloatField()\n    def __str__(self):\n        return self.name\nclass TouristAgency(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "TouristAgency",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class TouristAgency(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    rating = models.FloatField()\n    def __str__(self):\n        return self.name\nclass TouristAttraction(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "TouristAttraction",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class TouristAttraction(models.Model):\n    name = models.CharField(max_length=100)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    rating = models.FloatField()\n    def __str__(self):\n        return self.name\nclass Transportation(models.Model):\n    name = models.CharField(max_length=100)\n    price = models.DecimalField(max_digits=10, decimal_places=2)",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Transportation",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Transportation(models.Model):\n    name = models.CharField(max_length=100)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    def __str__(self):\n        return self.name\nclass Tour(models.Model):\n    name = models.CharField(max_length=100)\n    tourist_agency = models.ForeignKey(TouristAgency, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    duration = models.DurationField()",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Tour(models.Model):\n    name = models.CharField(max_length=100)\n    tourist_agency = models.ForeignKey(TouristAgency, on_delete=models.CASCADE)\n    price = models.DecimalField(max_digits=10, decimal_places=2)\n    duration = models.DurationField()\n    hotels = models.ManyToManyField(Hotel)\n    tourist_attractions = models.ManyToManyField(TouristAttraction)\n    transportation = models.ForeignKey(Transportation, on_delete=models.CASCADE)\n    def __str__(self):\n        return self.name",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comment",
+        "kind": 6,
+        "importPath": "turist.models",
+        "description": "turist.models",
+        "peekOfCode": "class Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)\n    author = models.CharField(max_length=100)\n    text = models.TextField()\n    def __str__(self):\n        return self.author + ' - ' + self.tour.name'''",
+        "detail": "turist.models",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "turist.urls",
+        "description": "turist.urls",
+        "peekOfCode": "app_name = 'travel_agency'\nurlpatterns = [\n    path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n]",
+        "detail": "turist.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "turist.urls",
+        "description": "turist.urls",
+        "peekOfCode": "urlpatterns = [\n    path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n]",
+        "detail": "turist.urls",
+        "documentation": {}
+    },
+    {
         "label": "index",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def index(request):\n    return HttpResponse(\"Hello METANIT.COM\")\n# Create your views here.",
+        "peekOfCode": "def index(request):\n    return render(request, \"templates/index.html\")\ndef user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)\n    return render(request, 'users/detail.html', {'user': user})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_detail",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)\n    return render(request, 'users/detail.html', {'user': user})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "tour_detail",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':\n        author = request.POST.get('author')\n        text = request.POST.get('text')\n        comment = Comment(tour=tour, author=author, text=text)",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "add_comment",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':\n        author = request.POST.get('author')\n        text = request.POST.get('text')\n        comment = Comment(tour=tour, author=author, text=text)\n        comment.save()\n    return render(request, 'tours/detail.html', {'tour': tour})",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -266,7 +627,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'turizm.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'turizm.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'Zhanar',\n        'USER': 'postgres',\n        'PASSWORD': '123456',\n        'HOST': 'localhost',",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -275,7 +636,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.postgresql',\n        'NAME': 'Zhanar',\n        'USER': 'postgres',\n        'PASSWORD': '123456',\n        'HOST': 'localhost',\n        'PORT': '5432',\n    }\n}",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -347,7 +708,7 @@
         "kind": 5,
         "importPath": "turizm.urls",
         "description": "turizm.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='home'),\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index),\n    path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n    path('admin/', admin.site.urls),\n]",
         "detail": "turizm.urls",
         "documentation": {}
     },

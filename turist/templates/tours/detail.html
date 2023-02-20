@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ tour.name }}</title>
+</head>
+<body>
+	<h1>{{ tour.name }}</h1>
+	<p>Направление: {{ tour.destination.name }}</p>
+	<p>Дата начала: {{ tour.start_date }}</p>
+	<p>Дата окончания: {{ tour.end_date }}</p>
+	<p>Транспорт: {{ tour.transportation.transport }}</p>
+	<p>Отель: {{ tour.hotel.name }} ({{ tour.hotel.city.name }})</p>
+	<p>Достопримечательности:</p>
+	<ul>
+	{% for place in tour.places.all %}
+		<li>{{ place.name }}</li>
+	{% endfor %}
+	</ul>
+	<h2>Отзывы</h2>
+	<ul>
+	{% for comment in tour.comment_set.all %}
+		<li>{{ comment.author }}: {{ comment.text }}</li>
+	{% endfor %}
+	</ul>
+	<h2>Оставить отзыв</h2>
+	<form method="post" action="{% url 'add_comment' tour.id %}">
+		{% csrf_token %}
+		<label for="author">Ваше имя:</label>
+		<input type="text" name="author" id="author"><br>
+		<label for="text">Отзыв:</label>
+		<textarea name="text" id="text"></textarea><br>
+		<input type="submit" value="Оставить отзыв">
+	</form>
+</body>

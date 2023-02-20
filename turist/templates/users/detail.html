@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список стран</title>
+</head>
+<body>
+	<h1>Список стран</h1>
+	<ul>
+	{% for country in countries %}
+		<li>{{ country.name }} ({{ country.code }})</li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
