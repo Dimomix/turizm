@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Django на METANIT.COM</title>
-    <meta charset="utf-8" />
-</head>
-<body>
-    <h2>Hello METANIT.COM</h2>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to our travel agency</h2>
+  <p>Please choose an option:</p>
+  <ul>
+    <li><a href="{% url 'login' %}">Login</a></li>
+    <li><a href="{% url 'register' %}">Register</a></li>
+  </ul>
+{% endblock %}

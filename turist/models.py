@@ -1,6 +1,9 @@
 from django.db import models
 from turizm.settings import AUTH_PASSWORD_VALIDATORS
 from django.utils.translation import gettext_lazy as _
+
+#####################
+from django.contrib.auth.models import User
 # Create your models here.
 class User(models.Model):
     username = models.CharField(max_length=100)
@@ -24,7 +27,6 @@ class Country(models.Model):
 class City(models.Model):
     name = models.CharField(max_length=255)
     country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')
-    
 class Way(models.Model):
     TRANSPORT_CHOICES = [
         ('car', _('Car')),
@@ -37,7 +39,6 @@ class Way(models.Model):
     departure_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='departures')
     arrival_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='arrivals')
     duration = models.DurationField()
-
 
 class Hotel(models.Model):
     name = models.CharField(max_length=100)

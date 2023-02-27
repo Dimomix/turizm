@@ -73,6 +73,14 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -137,6 +145,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "AUTH_PASSWORD_VALIDATORS",
         "importPath": "turizm.settings",
         "description": "turizm.settings",
@@ -153,6 +169,14 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -166,6 +190,14 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateResponse",
+        "importPath": "django.template.response",
+        "description": "django.template.response",
+        "isExtraImport": true,
+        "detail": "django.template.response",
         "documentation": {}
     },
     {
@@ -174,6 +206,38 @@
         "description": "django.http",
         "isExtraImport": true,
         "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -510,7 +574,7 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def index(request):\n    return render(request, \"templates/index.html\")\ndef user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)\n    return render(request, 'users/detail.html', {'user': user})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):",
+        "peekOfCode": "def index(request):\n    return render(request, 'index.html')\ndef user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)\n    return render(request, 'users/detail.html', {'user': user})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -537,7 +601,43 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':\n        author = request.POST.get('author')\n        text = request.POST.get('text')\n        comment = Comment(tour=tour, author=author, text=text)\n        comment.save()\n    return render(request, 'tours/detail.html', {'tour': tour})",
+        "peekOfCode": "def add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':\n        author = request.POST.get('author')\n        text = request.POST.get('text')\n        comment = Comment(tour=tour, author=author, text=text)\n        comment.save()\n    return render(request, 'tours/detail.html', {'tour': tour})\n########################################################\ndef user_login(request):",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_login",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def user_login(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('index')\n        else:\n            messages.error(request, 'Invalid username or password.')",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_logout",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def user_logout(request):\n    logout(request)\n    return redirect('home')\ndef user_register(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            user = form.save()\n            # log the user in after registration\n            login(request, user)",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "user_register",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def user_register(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            user = form.save()\n            # log the user in after registration\n            login(request, user)\n            return redirect('index')\n    else:\n        form = UserCreationForm()",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('home') # replace 'home' with the name of your homepage view\n        else:\n            # handle invalid login credentials",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -708,7 +808,7 @@
         "kind": 5,
         "importPath": "turizm.urls",
         "description": "turizm.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"\", views.index),\n    path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login/', views.user_login, name='login'),\n    path('logout/', views.user_logout, name='logout'),\n    path('register/', views.user_register, name='register'),\n    #path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    #path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    #path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n    path('admin/', admin.site.urls),\n]",
         "detail": "turizm.urls",
         "documentation": {}
     },

@@ -21,6 +21,7 @@ class Hotel(models.Model):
     city = models.ForeignKey(City, on_delete=models.CASCADE)
     price_per_night = models.DecimalField(max_digits=10, decimal_places=2)
     rating = models.FloatField()
+    
     def __str__(self):
         return self.name
 
@@ -57,7 +58,6 @@ class Tour(models.Model):
     hotels = models.ManyToManyField(Hotel)
     tourist_attractions = models.ManyToManyField(TouristAttraction)
     transportation = models.ForeignKey(Transportation, on_delete=models.CASCADE)
-
     def __str__(self):
         return self.name
 
