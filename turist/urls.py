@@ -5,5 +5,4 @@ app_name = 'travel_agency'
 
 urlpatterns = [
      
-     
 ]
