@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ tour.name }}</title>
+    <style>
+        /* CSS стили для отображения деталей тура */
+        .tour-info {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .tour-info img {
+            max-width: 400px;
+            max-height: 400px;
+            margin-right: 20px;
+        }
+        .tour-info h1 {
+            margin-top: 0;
+        }
+        .tour-info p {
+            margin-bottom: 0;
+        }
+        .tour-info .details {
+            margin-top: 20px;
+        }
+        .tour-info .details h2 {
+            margin-top: 0;
+        }
+        .tour-info .details h3 {
+            margin-top: 20px;
+        }
+        .tour-info .details p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tour-info">
+        <img src="{{ tour.hotel.image.url }}" alt="{{ tour.hotel.name }}">
+        <div>
+            <h1>{{ tour.name }}</h1>
+            <p><strong>Destination:</strong> {{ tour.destination.name }}</p>
+            <p><strong>Dates:</strong> {{ tour.start_date|date:"M d, Y" }} - {{ tour.end_date|date:"M d, Y" }}</p>
+            <p><strong>Transportation:</strong> {{ tour.transportation.transport }}</p>
+            <p><strong>Hotel:</strong> {{ tour.hotel.name }}</p>
+            <p><strong>Price:</strong> {{ tour.hotel.price }}$</p>
+        </div>
+    </div>
+    <div class="details">
+        <h2>Details</h2>
+        <p>{{ tour.hotel.description }}</p>
+        <h3>Places to Visit</h3>
+        {% if tour.places.all %}
+            <ul>
+                {% for place in tour.places.all %}
+                    <li>{{ place.name }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No places to visit.</p>
+        {% endif %}
+    </div>
+</body>
+</html>

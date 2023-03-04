@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>Cities</h1>
+    <ul>
+      {% for city in cities %}
+        <li><a href="{% url 'city_detail' city.pk %}">{{ city.name }}, {{ city.country.name }}</a></li>
+      {% empty %}
+        <li>No cities found.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

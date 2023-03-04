@@ -1,10 +1,52 @@
-{% extends 'base.html' %}
-
-{% block content %}
-  <h2>Welcome to our travel agency</h2>
-  <p>Please choose an option:</p>
-  <ul>
-    <li><a href="{% url 'login' %}">Login</a></li>
-    <li><a href="{% url 'register' %}">Register</a></li>
-  </ul>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <style>
+        /* CSS стили для отображения списка туров */
+        .tour-card {
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .tour-card img {
+            max-width: 200px;
+            max-height: 200px;
+            margin-right: 20px;
+        }
+        .tour-card h2 {
+            margin-top: 0;
+        }
+        .tour-card a {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of Tours</h1>
+    {% if tours %}
+        {% for tour in tours %}
+            <div class="tour-card">
+                <img src="{{ tour.hotel.image.url }}" alt="{{ tour.hotel.name }}">
+                <div>
+                    <h2>{{ tour.name }}</h2>
+                    <p>{{ tour.start_date|date:"M d, Y" }} - {{ tour.end_date|date:"M d, Y" }}</p>
+                    <p>{{ tour.destination.name }}</p>
+                    <p>{{ tour.transportation.transport }}</p>
+                    <p>{{ tour.hotel.price }}$</p>
+                    <a href="{% url 'tour-detail' tour.id %}">Details</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No tours available.</p>
+    {% endif %}
+</body>
+</html> 

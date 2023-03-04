@@ -1,0 +1,12 @@
+{% extends 'tourism/base.html' %}
+
+{% block content %}
+  <h1>Tours</h1>
+  <ul>
+    {% for tour in tours %}
+      <li><a href="{% url 'tour_detail' tour.id %}">{{ tour.name }}</a></li>
+    {% empty %}
+      <li>No tours available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

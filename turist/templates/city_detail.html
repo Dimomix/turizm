@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h1>{{ city.name }}, {{ city.country.name }}</h1>
+    <p>{{ city.description }}</p>
+    <h2>Hotels in {{ city.name }}</h2>
+    <ul>
+      {% for hotel in city.hotels.all %}
+        <li><a href="{% url 'hotel_detail' hotel.pk %}">{{ hotel.name }}</a></li>
+      {% empty %}
+        <li>No hotels found in {{ city.name }}.</li>
+      {% endfor %}
+    </ul>
+    <h2>Places to visit in {{ city.name }}</h2>
+    <ul>
+      {% for place in city.places.all %}
+        <li><a href="{% url 'place_detail' place.pk %}">{{ place.name }}</a></li>
+      {% empty %}
+        <li>No places to visit found in {{ city.name }}.</li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

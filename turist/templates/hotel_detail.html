@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>{{ hotel.name }}</h1>
+        <img src="{{ hotel.image.url }}" alt="{{ hotel.name }}" class="img-fluid">
+        <p>{{ hotel.description }}</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Hotel Details</h3>
+        <p><strong>Address:</strong> {{ hotel.address }}</p>
+        <p><strong>City:</strong> {{ hotel.city.name }}</p>
+        <p><strong>Room type:</strong> {{ hotel.room_type }}</p>
+        <p><strong>Available rooms:</strong> {{ hotel.available_rooms }}</p>
+        <p><strong>Price per night:</strong> {{ hotel.price }} $</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

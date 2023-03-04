@@ -193,6 +193,14 @@
         "documentation": {}
     },
     {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "TemplateResponse",
         "importPath": "django.template.response",
         "description": "django.template.response",
@@ -552,11 +560,83 @@
         "documentation": {}
     },
     {
+        "label": "tours",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "tour_detail",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)\n    return render(request, 'hotel_detail.html', {'hotel': hotel})\ndef cities(request):",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "hotels",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)\n    return render(request, 'hotel_detail.html', {'hotel': hotel})\ndef cities(request):\n    cities = City.objects.all()\n    return render(request, 'cities.html', {'cities': cities})\ndef city_detail(request, city_id):",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "hotel_detail",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)\n    return render(request, 'hotel_detail.html', {'hotel': hotel})\ndef cities(request):\n    cities = City.objects.all()\n    return render(request, 'cities.html', {'cities': cities})\ndef city_detail(request, city_id):\n    city = get_object_or_404(City, pk=city_id)\n    return render(request, 'city_detail.html', {'city': city})\ndef places(request):",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "cities",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def cities(request):\n    cities = City.objects.all()\n    return render(request, 'cities.html', {'cities': cities})\ndef city_detail(request, city_id):\n    city = get_object_or_404(City, pk=city_id)\n    return render(request, 'city_detail.html', {'city': city})\ndef places(request):\n    places = Place.objects.all()\n    return render(request, 'places.html', {'places': places})\ndef place_detail(request, place_id):",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "city_detail",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def city_detail(request, city_id):\n    city = get_object_or_404(City, pk=city_id)\n    return render(request, 'city_detail.html', {'city': city})\ndef places(request):\n    places = Place.objects.all()\n    return render(request, 'places.html', {'places': places})\ndef place_detail(request, place_id):\n    place = get_object_or_404(Place, pk=place_id)\n    return render(request, 'place_detail.html', {'place': place})",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "places",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def places(request):\n    places = Place.objects.all()\n    return render(request, 'places.html', {'places': places})\ndef place_detail(request, place_id):\n    place = get_object_or_404(Place, pk=place_id)\n    return render(request, 'place_detail.html', {'place': place})",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
+        "label": "place_detail",
+        "kind": 2,
+        "importPath": "turist.tempCodeRunnerFile",
+        "description": "turist.tempCodeRunnerFile",
+        "peekOfCode": "def place_detail(request, place_id):\n    place = get_object_or_404(Place, pk=place_id)\n    return render(request, 'place_detail.html', {'place': place})",
+        "detail": "turist.tempCodeRunnerFile",
+        "documentation": {}
+    },
+    {
         "label": "app_name",
         "kind": 5,
         "importPath": "turist.urls",
         "description": "turist.urls",
-        "peekOfCode": "app_name = 'travel_agency'\nurlpatterns = [\n    path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n]",
+        "peekOfCode": "app_name = 'travel_agency'\nurlpatterns = [\n    path('', views.index, name='index'),\n    path('tours/', views.tours, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),\n    path('places/', views.places, name='places'),",
         "detail": "turist.urls",
         "documentation": {}
     },
@@ -565,7 +645,7 @@
         "kind": 5,
         "importPath": "turist.urls",
         "description": "turist.urls",
-        "peekOfCode": "urlpatterns = [\n    path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('tours/', views.tours, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),\n    path('places/', views.places, name='places'),\n    path('places/<int:place_id>/', views.place_detail, name='place_detail'),",
         "detail": "turist.urls",
         "documentation": {}
     },
@@ -574,16 +654,16 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'index.html')\ndef user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)\n    return render(request, 'users/detail.html', {'user': user})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):",
+        "peekOfCode": "def index(request):\n    return render(request, 'index.html')\ndef tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()",
         "detail": "turist.views",
         "documentation": {}
     },
     {
-        "label": "user_detail",
+        "label": "tours",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def user_detail(request, user_id):\n    user = get_object_or_404(User, pk=user_id)\n    return render(request, 'users/detail.html', {'user': user})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':",
+        "peekOfCode": "def tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -592,52 +672,61 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    comments = Comment.objects.filter(tour=tour)\n    return render(request, 'tours/detail.html', {'tour': tour, 'comments': comments})\ndef add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':\n        author = request.POST.get('author')\n        text = request.POST.get('text')\n        comment = Comment(tour=tour, author=author, text=text)",
+        "peekOfCode": "def tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)\n    return render(request, 'hotel_detail.html', {'hotel': hotel})\ndef cities(request):",
         "detail": "turist.views",
         "documentation": {}
     },
     {
-        "label": "add_comment",
+        "label": "hotels",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def add_comment(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    if request.method == 'POST':\n        author = request.POST.get('author')\n        text = request.POST.get('text')\n        comment = Comment(tour=tour, author=author, text=text)\n        comment.save()\n    return render(request, 'tours/detail.html', {'tour': tour})\n########################################################\ndef user_login(request):",
+        "peekOfCode": "def hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)\n    return render(request, 'hotel_detail.html', {'hotel': hotel})\ndef cities(request):\n    cities = City.objects.all()\n    return render(request, 'cities.html', {'cities': cities})\ndef city_detail(request, city_id):",
         "detail": "turist.views",
         "documentation": {}
     },
     {
-        "label": "user_login",
+        "label": "hotel_detail",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def user_login(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('index')\n        else:\n            messages.error(request, 'Invalid username or password.')",
+        "peekOfCode": "def hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)\n    return render(request, 'hotel_detail.html', {'hotel': hotel})\ndef cities(request):\n    cities = City.objects.all()\n    return render(request, 'cities.html', {'cities': cities})\ndef city_detail(request, city_id):\n    city = get_object_or_404(City, pk=city_id)\n    return render(request, 'city_detail.html', {'city': city})\ndef places(request):",
         "detail": "turist.views",
         "documentation": {}
     },
     {
-        "label": "user_logout",
+        "label": "cities",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def user_logout(request):\n    logout(request)\n    return redirect('home')\ndef user_register(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            user = form.save()\n            # log the user in after registration\n            login(request, user)",
+        "peekOfCode": "def cities(request):\n    cities = City.objects.all()\n    return render(request, 'cities.html', {'cities': cities})\ndef city_detail(request, city_id):\n    city = get_object_or_404(City, pk=city_id)\n    return render(request, 'city_detail.html', {'city': city})\ndef places(request):\n    places = Place.objects.all()\n    return render(request, 'places.html', {'places': places})\ndef place_detail(request, place_id):",
         "detail": "turist.views",
         "documentation": {}
     },
     {
-        "label": "user_register",
+        "label": "city_detail",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def user_register(request):\n    if request.method == 'POST':\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            user = form.save()\n            # log the user in after registration\n            login(request, user)\n            return redirect('index')\n    else:\n        form = UserCreationForm()",
+        "peekOfCode": "def city_detail(request, city_id):\n    city = get_object_or_404(City, pk=city_id)\n    return render(request, 'city_detail.html', {'city': city})\ndef places(request):\n    places = Place.objects.all()\n    return render(request, 'places.html', {'places': places})\ndef place_detail(request, place_id):\n    place = get_object_or_404(Place, pk=place_id)\n    return render(request, 'place_detail.html', {'place': place}) \n# def index(request):",
         "detail": "turist.views",
         "documentation": {}
     },
     {
-        "label": "login_view",
+        "label": "places",
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def login_view(request):\n    if request.method == 'POST':\n        username = request.POST['username']\n        password = request.POST['password']\n        user = authenticate(request, username=username, password=password)\n        if user is not None:\n            login(request, user)\n            return redirect('home') # replace 'home' with the name of your homepage view\n        else:\n            # handle invalid login credentials",
+        "peekOfCode": "def places(request):\n    places = Place.objects.all()\n    return render(request, 'places.html', {'places': places})\ndef place_detail(request, place_id):\n    place = get_object_or_404(Place, pk=place_id)\n    return render(request, 'place_detail.html', {'place': place}) \n# def index(request):\n#     return render(request, 'index.html')\n# def user_detail(request, user_id):\n#     user = get_object_or_404(User, pk=user_id)",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "place_detail",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def place_detail(request, place_id):\n    place = get_object_or_404(Place, pk=place_id)\n    return render(request, 'place_detail.html', {'place': place}) \n# def index(request):\n#     return render(request, 'index.html')\n# def user_detail(request, user_id):\n#     user = get_object_or_404(User, pk=user_id)\n#     return render(request, 'users/detail.html', {'user': user})\n# def tour_detail(request, tour_id):\n#     tour = get_object_or_404(Tour, pk=tour_id)",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -808,7 +897,7 @@
         "kind": 5,
         "importPath": "turizm.urls",
         "description": "turizm.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('login/', views.user_login, name='login'),\n    path('logout/', views.user_logout, name='logout'),\n    path('register/', views.user_register, name='register'),\n    #path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n    #path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    #path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    # path('', views.index, name='index'),\n    path('', include('turist.urls')),\n]\n# path('login/', views.user_login, name='login'),\n# path('login/', views.login_view, name='login'),\n# path('logout/', views.user_logout, name='logout'),\n# path('register/', views.user_register, name='register'),\n#path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n#path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),",
         "detail": "turizm.urls",
         "documentation": {}
     },

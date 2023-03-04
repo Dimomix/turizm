@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ city.name }} Places to Visit</h1>
+  {% for place in city.places.all %}
+    <div class="card mb-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{{ place.image.url }}" class="card-img" alt="{{ place.name }}">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ place.name }}</h5>
+            <p class="card-text">{{ place.description }}</p>
+            <a href="{% url 'place_detail' place.id %}" class="btn btn-primary">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% empty %}
+    <p>No places found.</p>
+  {% endfor %}
+{% endblock %}

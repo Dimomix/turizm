@@ -14,20 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from turist import views
  
 urlpatterns = [
-    path('', views.index, name='index'),
-    # path('login/', views.user_login, name='login'),
-    # path('login/', views.login_view, name='login'),
-    # path('logout/', views.user_logout, name='logout'),
-    # path('register/', views.user_register, name='register'),
-    #path('users/<int:user_id>/', views.user_detail, name='user_detail'),
-    #path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),
-    #path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),
-    path('admin/', admin.site.urls),
+    # path('', views.index, name='index'),
+    path('', include('turist.urls')),
+    
 ]
 
-
+# path('login/', views.user_login, name='login'),
+# path('login/', views.login_view, name='login'),
+# path('logout/', views.user_logout, name='logout'),
+# path('register/', views.user_register, name='register'),
+#path('users/<int:user_id>/', views.user_detail, name='user_detail'),
+#path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),
+#path('tours/<int:tour_id>/add_comment/', views.add_comment, name='add_comment'),
+# path('admin/', admin.site.urls),
 
