@@ -1,7 +1,7 @@
 from django.db import models
 from turizm.settings import AUTH_PASSWORD_VALIDATORS
 from django.utils.translation import gettext_lazy as _
-####
+#######
 #####################
 from django.contrib.auth.models import User
 # Create your models here.
