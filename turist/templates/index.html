@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,14 +35,14 @@
     {% if tours %}
         {% for tour in tours %}
             <div class="tour-card">
-                <img src="{{ tour.hotel.image.url }}" alt="{{ tour.hotel.name }}">
+                <img src="{{MEDIA_URL}}{{ tour.hotel.image.url }}" alt="{{ tour.hotel.name }}"width="400">
                 <div>
                     <h2>{{ tour.name }}</h2>
                     <p>{{ tour.start_date|date:"M d, Y" }} - {{ tour.end_date|date:"M d, Y" }}</p>
                     <p>{{ tour.destination.name }}</p>
                     <p>{{ tour.transportation.transport }}</p>
                     <p>{{ tour.hotel.price }}$</p>
-                    <a href="{% url 'tour-detail' tour.id %}">Details</a>
+                    <a href="{{% url 'tour_detail' tour.id %}}">Details</a>
                 </div>
             </div>
         {% endfor %}

@@ -12,6 +12,10 @@ class User(models.Model):
     login= models.CharField(max_length=100)
     ID= models.CharField(max_length=100)
     address= models.CharField(max_length=100)
+    
+    class Meta:
+        verbose_name="Пользователь"
+        verbose_name_plural='Пользователи'
 class Employees(models.Model):
     emp_name= models.CharField(max_length=100)
     emp_fname= models.CharField(max_length=100)
@@ -19,14 +23,23 @@ class Employees(models.Model):
     password= models.CharField(max_length=100)
     job= models.CharField(max_length=100)
     ID= models.CharField(max_length=100)
-    
+    class Meta:
+        verbose_name="Сотрудник"
+        verbose_name_plural='Сотрудники'
+        
 class Country(models.Model):
     name = models.CharField(max_length=255)
     code = models.CharField(max_length=3)
+    class Meta:
+        verbose_name="Страна"
+        verbose_name_plural='Страны'
 
 class City(models.Model):
     name = models.CharField(max_length=255)
     country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')
+    class Meta:
+        verbose_name="Город"
+        verbose_name_plural='Города'
 class Way(models.Model):
     TRANSPORT_CHOICES = [
         ('car', _('Car')),
@@ -39,23 +52,32 @@ class Way(models.Model):
     departure_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='departures')
     arrival_city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='arrivals')
     duration = models.DurationField()
+    class Meta:
+        verbose_name="Транспорт"
+        verbose_name_plural='Транспорты'
 
 class Hotel(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='hotels')
+    image = models.ImageField()
     address = models.CharField(max_length=200)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
     room_type = models.CharField(max_length=50)
     available_rooms = models.IntegerField()
     price = models.FloatField()
+    class Meta:
+        verbose_name="Отель"
+        verbose_name_plural='Отели'
 
 class Place(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='places')
+    image = models.ImageField()
     address = models.CharField(max_length=200)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
+    class Meta:
+        verbose_name="Место"
+        verbose_name_plural='Места'
 
 class Tour(models.Model):
     name = models.CharField(max_length=100)
@@ -63,13 +85,19 @@ class Tour(models.Model):
     start_date = models.DateField()
     end_date = models.DateField()
     transportation = models.ForeignKey(Way, on_delete=models.CASCADE)
-    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)
+    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE, null=False)
     places = models.ManyToManyField(Place, related_name='tours')
+    class Meta:
+        verbose_name="Тур"
+        verbose_name_plural='Туры'
 
 class Comment(models.Model):
     tour = models.ForeignKey(Tour, on_delete=models.CASCADE)
-    author = models.CharField(max_length=100)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     text = models.TextField() 
+    class Meta:
+        verbose_name="Отзыв"
+        verbose_name_plural='Отзывы'
 
 ''' class Hotel(models.Model):
     name = models.CharField(max_length=100)

@@ -1,0 +1,21 @@
+{% block content %}
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ hotel.name }}</title>
+</head>
+<body>
+    {% for hotel in hotels %}
+    <div class="tour-info">
+        <img src="{{MEDIA_URL}}{{hotel.image.url}}" alt="{{ hotel.name }}" width="400">
+        <!-- <img src='turizm\media\content_hotel_5b9ed7b86f6ff4.33016273_AtOlJiR.jpg'>
+        <img src="{{hotel.image}}"  alt="{{ hotel.name }}"> -->
+    </div>
+    
+    {% endfor %}
+</body>
+</html>
+{% endblock %}

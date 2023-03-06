@@ -9,11 +9,15 @@ from .models import User, Tour, Comment, Hotel, City, Place
 
 
 def index(request):
-    return render(request, 'index.html')
+    tours = Tour.objects.all()
+    return render(request, 'index.html', {'tours': tours})
 
 def tours(request):
     tours = Tour.objects.all()
     return render(request, 'tours.html', {'tours': tours})
+def f(request):
+    hotels = Hotel.objects.all()
+    return render(request, 'f.html', {'hotels': hotels})
 
 def tour_detail(request, tour_id):
     tour = get_object_or_404(Tour, pk=tour_id)
