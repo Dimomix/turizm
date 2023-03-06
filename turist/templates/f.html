@@ -1,4 +1,4 @@
-{% block content %}
+{% extends 'autentification.html'%}
 <!-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +8,8 @@
     <title>{{ hotel.name }}</title>
 </head>
 <body>
+    {% block content %}
+
     {% for hotel in hotels %}
     <div class="tour-info">
         <img src="{{MEDIA_URL}}{{hotel.image.url}}" alt="{{ hotel.name }}" width="400">
@@ -16,6 +18,7 @@
     </div>
     
     {% endfor %}
+    {% endblock %}
 </body>
 </html>
-{% endblock %}
+

@@ -2,17 +2,10 @@ from django.db import models
 from turizm.settings import AUTH_PASSWORD_VALIDATORS
 from django.utils.translation import gettext_lazy as _
 ##########
-#####################
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 # Create your models here.
-class User(models.Model):
-    username = models.CharField(max_length=100)
-    userfname = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
-    login= models.CharField(max_length=100)
-    ID= models.CharField(max_length=100)
-    address= models.CharField(max_length=100)
-    
+class User(AbstractUser):
+    pass
     class Meta:
         verbose_name="Пользователь"
         verbose_name_plural='Пользователи'

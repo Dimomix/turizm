@@ -40,6 +40,190 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -89,6 +273,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -102,6 +294,22 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -153,6 +361,57 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
         "label": "AUTH_PASSWORD_VALIDATORS",
         "importPath": "turizm.settings",
         "description": "turizm.settings",
@@ -166,14 +425,6 @@
         "description": "django.utils.translation",
         "isExtraImport": true,
         "detail": "django.utils.translation",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -198,6 +449,63 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "turist",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "turist",
+        "description": "turist",
+        "detail": "turist",
+        "documentation": {}
+    },
+    {
+        "label": "views",
+        "importPath": "turist",
+        "description": "turist",
+        "isExtraImport": true,
+        "detail": "turist",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "TemplateView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
         "documentation": {}
     },
     {
@@ -271,14 +579,6 @@
         "description": "pathlib",
         "isExtraImport": true,
         "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "views",
-        "importPath": "turist",
-        "description": "turist",
-        "isExtraImport": true,
-        "detail": "turist",
         "documentation": {}
     },
     {
@@ -398,6 +698,105 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0002_alter_city_options_alter_comment_options_and_more",
+        "description": "turist.migrations.0002_alter_city_options_alter_comment_options_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='city',\n            options={'verbose_name': 'Город', 'verbose_name_plural': 'Города'},\n        ),\n        migrations.AlterModelOptions(",
+        "detail": "turist.migrations.0002_alter_city_options_alter_comment_options_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0003_alter_comment_author",
+        "description": "turist.migrations.0003_alter_comment_author",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0002_alter_city_options_alter_comment_options_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='comment',\n            name='author',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='turist.user'),\n        ),",
+        "detail": "turist.migrations.0003_alter_comment_author",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0004_remove_tour_hotel_tour_hotel",
+        "description": "turist.migrations.0004_remove_tour_hotel_tour_hotel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0003_alter_comment_author'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='tour',\n            name='hotel',\n        ),\n        migrations.AddField(",
+        "detail": "turist.migrations.0004_remove_tour_hotel_tour_hotel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0005_alter_hotel_image_alter_place_image_and_more",
+        "description": "turist.migrations.0005_alter_hotel_image_alter_place_image_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0004_remove_tour_hotel_tour_hotel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='hotel',\n            name='image',\n            field=models.ImageField(upload_to=''),\n        ),",
+        "detail": "turist.migrations.0005_alter_hotel_image_alter_place_image_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0006_alter_hotel_image_alter_place_image",
+        "description": "turist.migrations.0006_alter_hotel_image_alter_place_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0005_alter_hotel_image_alter_place_image_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='hotel',\n            name='image',\n            field=models.ImageField(upload_to='hotels'),\n        ),",
+        "detail": "turist.migrations.0006_alter_hotel_image_alter_place_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0007_alter_tour_hotel",
+        "description": "turist.migrations.0007_alter_tour_hotel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0006_alter_hotel_image_alter_place_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='tour',\n            name='hotel',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='turist.hotel'),\n        ),",
+        "detail": "turist.migrations.0007_alter_tour_hotel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0008_alter_tour_hotel",
+        "description": "turist.migrations.0008_alter_tour_hotel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0007_alter_tour_hotel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='tour',\n            name='hotel',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='turist.hotel'),\n        ),",
+        "detail": "turist.migrations.0008_alter_tour_hotel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0009_alter_tour_hotel",
+        "description": "turist.migrations.0009_alter_tour_hotel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0008_alter_tour_hotel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='tour',\n            name='hotel',\n            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='turist.hotel'),\n        ),",
+        "detail": "turist.migrations.0009_alter_tour_hotel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0010_alter_tour_hotel",
+        "description": "turist.migrations.0010_alter_tour_hotel",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0009_alter_tour_hotel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='tour',\n            name='hotel',\n            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='turist.hotel'),\n        ),",
+        "detail": "turist.migrations.0010_alter_tour_hotel",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0011_alter_hotel_image_alter_place_image",
+        "description": "turist.migrations.0011_alter_hotel_image_alter_place_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('turist', '0010_alter_tour_hotel'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='hotel',\n            name='image',\n            field=models.ImageField(upload_to=''),\n        ),",
+        "detail": "turist.migrations.0011_alter_hotel_image_alter_place_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "turist.migrations.0012_alter_user_managers_remove_user_id_and_more",
+        "description": "turist.migrations.0012_alter_user_managers_remove_user_id_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n        ('turist', '0011_alter_hotel_image_alter_place_image'),\n    ]\n    operations = [\n        migrations.AlterModelManagers(\n            name='user',\n            managers=[\n                ('objects', django.contrib.auth.models.UserManager()),",
+        "detail": "turist.migrations.0012_alter_user_managers_remove_user_id_and_more",
+        "documentation": {}
+    },
+    {
         "label": "TuristConfig",
         "kind": 6,
         "importPath": "turist.apps",
@@ -411,7 +810,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class User(models.Model):\n    username = models.CharField(max_length=100)\n    userfname = models.CharField(max_length=100)\n    password = models.CharField(max_length=100)\n    login= models.CharField(max_length=100)\n    ID= models.CharField(max_length=100)\n    address= models.CharField(max_length=100)\nclass Employees(models.Model):\n    emp_name= models.CharField(max_length=100)\n    emp_fname= models.CharField(max_length=100)",
+        "peekOfCode": "class User(AbstractUser):\n    pass\n    class Meta:\n        verbose_name=\"Пользователь\"\n        verbose_name_plural='Пользователи'\nclass Employees(models.Model):\n    emp_name= models.CharField(max_length=100)\n    emp_fname= models.CharField(max_length=100)\n    login= models.CharField(max_length=100)\n    password= models.CharField(max_length=100)",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -420,7 +819,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class Employees(models.Model):\n    emp_name= models.CharField(max_length=100)\n    emp_fname= models.CharField(max_length=100)\n    login= models.CharField(max_length=100)\n    password= models.CharField(max_length=100)\n    job= models.CharField(max_length=100)\n    ID= models.CharField(max_length=100)\nclass Country(models.Model):\n    name = models.CharField(max_length=255)\n    code = models.CharField(max_length=3)",
+        "peekOfCode": "class Employees(models.Model):\n    emp_name= models.CharField(max_length=100)\n    emp_fname= models.CharField(max_length=100)\n    login= models.CharField(max_length=100)\n    password= models.CharField(max_length=100)\n    job= models.CharField(max_length=100)\n    ID= models.CharField(max_length=100)\n    class Meta:\n        verbose_name=\"Сотрудник\"\n        verbose_name_plural='Сотрудники'",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -429,7 +828,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class Country(models.Model):\n    name = models.CharField(max_length=255)\n    code = models.CharField(max_length=3)\nclass City(models.Model):\n    name = models.CharField(max_length=255)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')\nclass Way(models.Model):\n    TRANSPORT_CHOICES = [\n        ('car', _('Car')),\n        ('bus', _('Bus')),",
+        "peekOfCode": "class Country(models.Model):\n    name = models.CharField(max_length=255)\n    code = models.CharField(max_length=3)\n    class Meta:\n        verbose_name=\"Страна\"\n        verbose_name_plural='Страны'\nclass City(models.Model):\n    name = models.CharField(max_length=255)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')\n    class Meta:",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -438,7 +837,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class City(models.Model):\n    name = models.CharField(max_length=255)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')\nclass Way(models.Model):\n    TRANSPORT_CHOICES = [\n        ('car', _('Car')),\n        ('bus', _('Bus')),\n        ('train', _('Train')),\n        ('plane', _('Plane')),\n        ('ship', _('Ship')),",
+        "peekOfCode": "class City(models.Model):\n    name = models.CharField(max_length=255)\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities')\n    class Meta:\n        verbose_name=\"Город\"\n        verbose_name_plural='Города'\nclass Way(models.Model):\n    TRANSPORT_CHOICES = [\n        ('car', _('Car')),\n        ('bus', _('Bus')),",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -456,7 +855,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to='hotels')\n    address = models.CharField(max_length=200)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    room_type = models.CharField(max_length=50)\n    available_rooms = models.IntegerField()\n    price = models.FloatField()\nclass Place(models.Model):",
+        "peekOfCode": "class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField()\n    address = models.CharField(max_length=200)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    room_type = models.CharField(max_length=50)\n    available_rooms = models.IntegerField()\n    price = models.FloatField()\n    class Meta:",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -465,7 +864,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class Place(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField(upload_to='places')\n    address = models.CharField(max_length=200)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\nclass Tour(models.Model):\n    name = models.CharField(max_length=100)\n    destination = models.ForeignKey(City, on_delete=models.CASCADE)\n    start_date = models.DateField()",
+        "peekOfCode": "class Place(models.Model):\n    name = models.CharField(max_length=100)\n    description = models.TextField()\n    image = models.ImageField()\n    address = models.CharField(max_length=200)\n    city = models.ForeignKey(City, on_delete=models.CASCADE)\n    class Meta:\n        verbose_name=\"Место\"\n        verbose_name_plural='Места'\nclass Tour(models.Model):",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -474,7 +873,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class Tour(models.Model):\n    name = models.CharField(max_length=100)\n    destination = models.ForeignKey(City, on_delete=models.CASCADE)\n    start_date = models.DateField()\n    end_date = models.DateField()\n    transportation = models.ForeignKey(Way, on_delete=models.CASCADE)\n    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE)\n    places = models.ManyToManyField(Place, related_name='tours')\nclass Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)",
+        "peekOfCode": "class Tour(models.Model):\n    name = models.CharField(max_length=100)\n    destination = models.ForeignKey(City, on_delete=models.CASCADE)\n    start_date = models.DateField()\n    end_date = models.DateField()\n    transportation = models.ForeignKey(Way, on_delete=models.CASCADE)\n    hotel = models.ForeignKey(Hotel, on_delete=models.CASCADE, null=False)\n    places = models.ManyToManyField(Place, related_name='tours')\n    class Meta:\n        verbose_name=\"Тур\"",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -483,7 +882,7 @@
         "kind": 6,
         "importPath": "turist.models",
         "description": "turist.models",
-        "peekOfCode": "class Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)\n    author = models.CharField(max_length=100)\n    text = models.TextField() \n''' class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    address = models.CharField(max_length=200)\n    room_type = models.CharField(max_length=50)\n    available_rooms = models.IntegerField()\n    price = models.FloatField()",
+        "peekOfCode": "class Comment(models.Model):\n    tour = models.ForeignKey(Tour, on_delete=models.CASCADE)\n    author = models.ForeignKey(User, on_delete=models.CASCADE)\n    text = models.TextField() \n    class Meta:\n        verbose_name=\"Отзыв\"\n        verbose_name_plural='Отзывы'\n''' class Hotel(models.Model):\n    name = models.CharField(max_length=100)\n    address = models.CharField(max_length=200)",
         "detail": "turist.models",
         "documentation": {}
     },
@@ -636,7 +1035,7 @@
         "kind": 5,
         "importPath": "turist.urls",
         "description": "turist.urls",
-        "peekOfCode": "app_name = 'travel_agency'\nurlpatterns = [\n    path('', views.index, name='index'),\n    path('tours/', views.tours, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),\n    path('places/', views.places, name='places'),",
+        "peekOfCode": "app_name = 'travel_agency'\nurlpatterns = [\n    path('', TemplateView.as_view(template_name='f.html'),name=\"f\"),\n    path('tours/', views.tours, name='tours'),\n    path('f/', views.f, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),",
         "detail": "turist.urls",
         "documentation": {}
     },
@@ -645,7 +1044,7 @@
         "kind": 5,
         "importPath": "turist.urls",
         "description": "turist.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', views.index, name='index'),\n    path('tours/', views.tours, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),\n    path('places/', views.places, name='places'),\n    path('places/<int:place_id>/', views.place_detail, name='place_detail'),",
+        "peekOfCode": "urlpatterns = [\n    path('', TemplateView.as_view(template_name='f.html'),name=\"f\"),\n    path('tours/', views.tours, name='tours'),\n    path('f/', views.f, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),\n    path('places/', views.places, name='places'),",
         "detail": "turist.urls",
         "documentation": {}
     },
@@ -654,7 +1053,7 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'index.html')\ndef tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()",
+        "peekOfCode": "def index(request):\n    tours = Tour.objects.all()\n    return render(request, 'index.html', {'tours': tours})\ndef tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef tour_detail(request, tour_id):",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -663,7 +1062,16 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):",
+        "peekOfCode": "def tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "f",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -744,7 +1152,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -753,7 +1161,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -762,7 +1170,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -771,7 +1179,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'Tur',",
+        "peekOfCode": "ALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -780,7 +1188,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'Tur',\n    'turist'\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'Tur',\n    'turist',\n]",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -843,7 +1251,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'ru-RU'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nSTATIC_URL = 'static/'\n# Default primary key field type",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -852,7 +1260,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -861,7 +1269,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -870,7 +1278,25 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.1/howto/static-files/\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "turizm.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "turizm.settings",
+        "description": "turizm.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "turizm.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "turizm.settings",
+        "description": "turizm.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\nSTATIC_URL = 'static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -897,7 +1323,7 @@
         "kind": 5,
         "importPath": "turizm.urls",
         "description": "turizm.urls",
-        "peekOfCode": "urlpatterns = [\n    # path('', views.index, name='index'),\n    path('', include('turist.urls')),\n]\n# path('login/', views.user_login, name='login'),\n# path('login/', views.login_view, name='login'),\n# path('logout/', views.user_logout, name='logout'),\n# path('register/', views.user_register, name='register'),\n#path('users/<int:user_id>/', views.user_detail, name='user_detail'),\n#path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),",
+        "peekOfCode": "urlpatterns = [\n    # path('', views.index, name='index'),\n    path('admin/', admin.site.urls),\n    path('', include('turist.urls')),\n]\nurlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)\n# path('login/', views.user_login, name='login'),\n# path('login/', views.login_view, name='login'),\n# path('logout/', views.user_logout, name='logout'),\n# path('register/', views.user_register, name='register'),",
         "detail": "turizm.urls",
         "documentation": {}
     },
@@ -908,6 +1334,33 @@
         "description": "turizm.wsgi",
         "peekOfCode": "application = get_wsgi_application()",
         "detail": "turizm.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "users.migrations.0001_initial",
+        "description": "users.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "users.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "UsersConfig",
+        "kind": 6,
+        "importPath": "users.apps",
+        "description": "users.apps",
+        "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'users'",
+        "detail": "users.apps",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "users.models",
+        "description": "users.models",
+        "peekOfCode": "class User(AbstractUser):\n    pass",
+        "detail": "users.models",
         "documentation": {}
     },
     {
