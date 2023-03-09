@@ -412,11 +412,67 @@
         "documentation": {}
     },
     {
-        "label": "AUTH_PASSWORD_VALIDATORS",
-        "importPath": "turizm.settings",
-        "description": "turizm.settings",
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
         "isExtraImport": true,
-        "detail": "turizm.settings",
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -428,7 +484,31 @@
         "documentation": {}
     },
     {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "importPath": "turizm.settings",
+        "description": "turizm.settings",
+        "isExtraImport": true,
+        "detail": "turizm.settings",
+        "documentation": {}
+    },
+    {
         "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -449,23 +529,6 @@
         "description": "django.urls",
         "isExtraImport": true,
         "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "turist",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "turist",
-        "description": "turist",
-        "detail": "turist",
-        "documentation": {}
-    },
-    {
-        "label": "views",
-        "importPath": "turist",
-        "description": "turist",
-        "isExtraImport": true,
-        "detail": "turist",
         "documentation": {}
     },
     {
@@ -525,35 +588,11 @@
         "documentation": {}
     },
     {
-        "label": "UserCreationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
+        "label": "View",
+        "importPath": "django.views",
+        "description": "django.views",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "authenticate",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "login",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
-        "documentation": {}
-    },
-    {
-        "label": "logout",
-        "importPath": "django.contrib.auth",
-        "description": "django.contrib.auth",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth",
+        "detail": "django.views",
         "documentation": {}
     },
     {
@@ -806,6 +845,15 @@
         "documentation": {}
     },
     {
+        "label": "UserCreationForm",
+        "kind": 6,
+        "importPath": "turist.forms",
+        "description": "turist.forms",
+        "peekOfCode": "class UserCreationForm(UserCreationForm):\n    email = forms.EmailField(\n        label=_(\"Email\"),\n        max_length=254,\n        widget=forms.EmailInput(attrs={'autocomplete': 'email'})\n    )\n    class Meta(UserCreationForm.Meta):\n        model = User\n        fields = (\"username\", \"email\")",
+        "detail": "turist.forms",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "kind": 6,
         "importPath": "turist.models",
@@ -1031,21 +1079,21 @@
         "documentation": {}
     },
     {
-        "label": "app_name",
-        "kind": 5,
-        "importPath": "turist.urls",
-        "description": "turist.urls",
-        "peekOfCode": "app_name = 'travel_agency'\nurlpatterns = [\n    path('', TemplateView.as_view(template_name='f.html'),name=\"f\"),\n    path('tours/', views.tours, name='tours'),\n    path('f/', views.f, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),",
-        "detail": "turist.urls",
-        "documentation": {}
-    },
-    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "turist.urls",
         "description": "turist.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', TemplateView.as_view(template_name='f.html'),name=\"f\"),\n    path('tours/', views.tours, name='tours'),\n    path('f/', views.f, name='tours'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),\n    path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),\n    path('cities/', views.cities, name='cities'),\n    path('cities/<int:city_id>/', views.city_detail, name='city_detail'),\n    path('places/', views.places, name='places'),",
+        "peekOfCode": "urlpatterns = [\n    path('',TemplateView.as_view(template_name='index.html'),name='home'),\n    path('asda/',TemplateView.as_view(template_name='f.html'),name='asda'),\n    path('users/', include('django.contrib.auth.urls')),\n    path('users/register/',Register.as_view(),name='register'),\n    path('tours/', views.tours, name='tours'), \n    path('asd/',views.asd, name='asd'),\n    path('f/', views.f, name='ftours_as'),\n    path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),\n    path('hotels/', views.hotels, name='hotels'),",
         "detail": "turist.urls",
+        "documentation": {}
+    },
+    {
+        "label": "Register",
+        "kind": 6,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "class Register(View):\n    template_name='registration/register.html'\n    def get(self,request):\n        context={\n            'form':UserCreationForm()\n        }\n        return render(request,self.template_name,context=context)\n    def post(self,request):\n        form=UserCreationForm(request.POST)\n        if form.is_valid():",
+        "detail": "turist.views",
         "documentation": {}
     },
     {
@@ -1053,7 +1101,7 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def index(request):\n    tours = Tour.objects.all()\n    return render(request, 'index.html', {'tours': tours})\ndef tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef tour_detail(request, tour_id):",
+        "peekOfCode": "def index(request):\n    tours = Tour.objects.all()\n    return render(request, 'index.html', {'tours': tours})\ndef tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef asd(request):",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -1062,7 +1110,7 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):",
+        "peekOfCode": "def tours(request):\n    tours = Tour.objects.all()\n    return render(request, 'tours.html', {'tours': tours})\ndef f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef asd(request):\n    return render(request, 'asd.html')\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -1071,7 +1119,16 @@
         "kind": 2,
         "importPath": "turist.views",
         "description": "turist.views",
-        "peekOfCode": "def f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):",
+        "peekOfCode": "def f(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'f.html', {'hotels': hotels})\ndef asd(request):\n    return render(request, 'asd.html')\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()",
+        "detail": "turist.views",
+        "documentation": {}
+    },
+    {
+        "label": "asd",
+        "kind": 2,
+        "importPath": "turist.views",
+        "description": "turist.views",
+        "peekOfCode": "def asd(request):\n    return render(request, 'asd.html')\ndef tour_detail(request, tour_id):\n    tour = get_object_or_404(Tour, pk=tour_id)\n    return render(request, 'tour_detail.html', {'tour': tour})\ndef hotels(request):\n    hotels = Hotel.objects.all()\n    return render(request, 'hotels.html', {'hotels': hotels})\ndef hotel_detail(request, hotel_id):\n    hotel = get_object_or_404(Hotel, pk=hotel_id)",
         "detail": "turist.views",
         "documentation": {}
     },
@@ -1152,7 +1209,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\nLOGIN_REDIRECT_URL='/'",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -1161,7 +1218,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "SECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-t48ho7hdf*1-fqub&*ca^0l+zu3(4$&7za5yqplrhl95r!ql)c'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\nLOGIN_REDIRECT_URL='/'\nLOGOUT_REDIRECT_URL='/'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -1170,7 +1227,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\nLOGIN_REDIRECT_URL='/'\nLOGOUT_REDIRECT_URL='/'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',",
         "detail": "turizm.settings",
         "documentation": {}
     },
@@ -1179,7 +1236,7 @@
         "kind": 5,
         "importPath": "turizm.settings",
         "description": "turizm.settings",
-        "peekOfCode": "ALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "peekOfCode": "ALLOWED_HOSTS = []\nAUTH_USER_MODEL='turist.User'\nLOGIN_REDIRECT_URL='/'\nLOGOUT_REDIRECT_URL='/'\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
         "detail": "turizm.settings",
         "documentation": {}
     },

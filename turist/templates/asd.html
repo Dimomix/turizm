@@ -1,0 +1,17 @@
+<!-- blog/index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Index</title>
+  </head>
+  <body>
+    <h1>Welcome to the Blog</h1>
+    <p>Check out our latest posts:</p>
+    <ul>
+      {% for post in posts %}
+        <li><a href="{% url 'blog:post_detail' pk=post.pk %}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

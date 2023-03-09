@@ -2,11 +2,35 @@ from django.shortcuts import render, get_object_or_404,redirect
 from django.template.response import TemplateResponse
 from django.http import HttpResponse
 #######3
-from django.contrib.auth.forms import UserCreationForm
+from .forms import UserCreationForm
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from .models import User, Tour, Comment, Hotel, City, Place
-
+from django.views import View
+from . import urls
+class Register(View):
+    template_name='registration/register.html'
+    def get(self,request):
+        context={
+            'form':UserCreationForm()
+        }
+        return render(request,self.template_name,context=context)
+    def post(self,request):
+        form=UserCreationForm(request.POST)
+        
+        if form.is_valid():
+            form.save()
+            username=form.cleaned_data.get('username')
+            password=form.cleaned_data.get('password2')
+            user=authenticate(username=username,password=password)
+            login(request,user)
+            return redirect('ftours_as')
+        context={
+            'form':form
+        }
+        return render(request,self.template_name,context=context)
+            
+            
 
 def index(request):
     tours = Tour.objects.all()
@@ -19,6 +43,8 @@ def f(request):
     hotels = Hotel.objects.all()
     return render(request, 'f.html', {'hotels': hotels})
 
+def asd(request):
+    return render(request, 'asd.html')
 def tour_detail(request, tour_id):
     tour = get_object_or_404(Tour, pk=tour_id)
     return render(request, 'tour_detail.html', {'tour': tour})

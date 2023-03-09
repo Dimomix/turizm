@@ -1,15 +1,19 @@
-from django.urls import path
-import turist
+#turist.urls.py
+from django.urls import path,include
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
-
-app_name = 'travel_agency'
+from .views import Register
+# app_name = 'turist'
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='f.html'),name="f"),
-    path('tours/', views.tours, name='tours'),
-    path('f/', views.f, name='tours'),
+    path('',TemplateView.as_view(template_name='index.html'),name='home'),
+    path('asda/',TemplateView.as_view(template_name='f.html'),name='asda'),
+    path('users/', include('django.contrib.auth.urls')),
+    path('users/register/',Register.as_view(),name='register'),
+    path('tours/', views.tours, name='tours'), 
+    path('asd/',views.asd, name='asd'),
+    path('f/', views.f, name='ftours_as'),
     path('tours/<int:tour_id>/', views.tour_detail, name='tour_detail'),
     path('hotels/', views.hotels, name='hotels'),
     path('hotels/<int:hotel_id>/', views.hotel_detail, name='hotel_detail'),
